@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import disruptiveLogo from "@/assets/disruptive-logo.svg";
 import documasterLogo from "@/assets/documaster-logo.png";
+import ardoqLogo from "@/assets/ardoq-logo.png";
+import dignioLogo from "@/assets/dignio-logo.png";
 
 const PortfolioSection = () => {
   const portfolioCompanies = [
@@ -8,7 +10,7 @@ const PortfolioSection = () => {
       name: "Dignio",
       description: "Digital remote care solutions for healthcare",
       website: "https://dignio.com",
-      logo: null, // Will use text placeholder
+      logo: dignioLogo,
     },
     {
       name: "Disruptive Technologies",
@@ -20,7 +22,7 @@ const PortfolioSection = () => {
       name: "Ardoq",
       description: "Enterprise architecture software platform",
       website: "https://www.ardoq.com",
-      logo: null, // Will use text placeholder
+      logo: ardoqLogo,
     },
     {
       name: "Documaster",
