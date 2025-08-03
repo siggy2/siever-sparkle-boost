@@ -65,7 +65,7 @@ const PortfolioSection = () => {
                       <img 
                         src={company.logo} 
                         alt={`${company.name} logo`}
-                        className="max-h-12 w-auto object-contain"
+                        className="max-h-16 w-auto object-contain"
                       />
                     ) : (
                       <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center">
