@@ -23,4 +23,4 @@ jobs:
           server: ftp.fastname.no
           username: ${{ secrets.FASTNAME_USER }}
           password: ${{ secrets.FASTNAME_PASS }}
-          local-dir: ./build
+          local-dir: ./build/
