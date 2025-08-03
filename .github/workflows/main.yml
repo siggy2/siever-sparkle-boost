@@ -10,17 +10,22 @@ jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Build Site
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm ci  # or `npm install` if you're not using a lockfile
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Build site with Vite
+        run: npm run build  # must produce ./dist/ directory
+
+      - name: List dist contents for debug
+        run: ls -la ./dist
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           server: ftp.fastname.no
           username: ${{ secrets.FASTNAME_USER }}
           password: ${{ secrets.FASTNAME_PASS }}
-          local-dir: ./build/
+          local-dir: ./dist/  # ✅ must have trailing slash
