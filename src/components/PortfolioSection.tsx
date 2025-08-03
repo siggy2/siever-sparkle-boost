@@ -38,7 +38,7 @@ const PortfolioSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Portfolio
+              Experience and Investments
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
               We partner with innovative companies that are transforming their industries 
