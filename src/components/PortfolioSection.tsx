@@ -41,7 +41,7 @@ const PortfolioSection = () => {
               Experience and Investments
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              We partner with innovative companies that are transforming their industries 
+              We invest our time and capital in innovative companies that are transforming their industries 
               through technology and strategic growth.
             </p>
           </div>
