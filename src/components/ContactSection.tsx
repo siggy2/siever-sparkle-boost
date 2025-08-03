@@ -36,15 +36,6 @@ const ContactSection = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-secondary-foreground">Phone</p>
-                      <p className="text-secondary-foreground/80">+47 XXX XX XXX</p>
-                    </div>
-                  </div>
                   
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
