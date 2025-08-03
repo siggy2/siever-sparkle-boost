@@ -1,0 +1,26 @@
+# .github/workflows/deploy.yml
+name: Deploy to FastName
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Site
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ftp.fastname.no
+          username: ${{ secrets.FASTNAME_USER }}
+          password: ${{ secrets.FASTNAME_PASS }}
+          local-dir: ./build
