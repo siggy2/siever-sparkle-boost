@@ -23,7 +23,7 @@ jobs:
         run: ls -la ./dist
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
         with:
           server: ftp.fastname.no
           username: ${{ secrets.FASTNAME_USER }}
