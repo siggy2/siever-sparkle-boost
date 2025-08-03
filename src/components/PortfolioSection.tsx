@@ -3,6 +3,7 @@ import disruptiveLogo from "@/assets/disruptive-logo.svg";
 import documasterLogo from "@/assets/documaster-logo.png";
 import ardoqLogo from "@/assets/ardoq-logo.png";
 import dignioLogo from "@/assets/dignio-logo-dark.png";
+import easeeLogo from "@/assets/easee-logo.png";
 
 const PortfolioSection = () => {
   const portfolioCompanies = [
@@ -29,6 +30,12 @@ const PortfolioSection = () => {
       description: "Document management and compliance solutions",
       website: "https://www.documaster.com",
       logo: documasterLogo,
+    },
+    {
+      name: "Easee",
+      description: "Smart electric vehicle charging solutions",
+      website: "https://easee.com",
+      logo: easeeLogo,
     },
   ];
 
