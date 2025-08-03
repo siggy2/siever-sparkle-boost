@@ -3,7 +3,7 @@ import disruptiveLogo from "@/assets/disruptive-logo.svg";
 import documasterLogo from "@/assets/documaster-logo.png";
 import ardoqLogo from "@/assets/ardoq-logo.png";
 import dignioLogo from "@/assets/dignio-logo-dark.png";
-import easeeLogo from "@/assets/easee-logo.png";
+import easeeLogo from "@/assets/easee-logo-dark.png";
 
 const PortfolioSection = () => {
   const portfolioCompanies = [
