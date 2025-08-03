@@ -4,7 +4,7 @@ import documasterLogo from "@/assets/documaster-logo.png";
 import ardoqLogo from "@/assets/ardoq-logo.png";
 import dignioLogo from "@/assets/dignio-logo.jpg";
 import easeeLogo from "@/assets/easee-logo.svg";
-import tapadLogo from "@/assets/tapad-logo.png";
+import tapadLogo from "@/assets/tapad-logo.svg";
 
 const PortfolioSection = () => {
   const portfolioCompanies = [
