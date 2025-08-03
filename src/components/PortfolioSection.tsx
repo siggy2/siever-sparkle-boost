@@ -4,6 +4,7 @@ import documasterLogo from "@/assets/documaster-logo.png";
 import ardoqLogo from "@/assets/ardoq-logo.png";
 import dignioLogo from "@/assets/dignio-logo.jpg";
 import easeeLogo from "@/assets/easee-logo.svg";
+import tapadLogo from "@/assets/tapad-logo.png";
 
 const PortfolioSection = () => {
   const portfolioCompanies = [
@@ -36,6 +37,12 @@ const PortfolioSection = () => {
       description: "Smart electric vehicle charging solutions",
       website: "https://easee.com",
       logo: easeeLogo,
+    },
+    {
+      name: "Tapad",
+      description: "Digital identity resolution and cross-device data platform",
+      website: "https://www.tapad.com",
+      logo: tapadLogo,
     },
   ];
 
