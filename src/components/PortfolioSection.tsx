@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import disruptiveLogo from "@/assets/disruptive-logo.svg";
 import documasterLogo from "@/assets/documaster-logo.png";
 import ardoqLogo from "@/assets/ardoq-logo.png";
-import dignioLogo from "@/assets/dignio-logo-dark.png";
+import dignioLogo from "@/assets/dignio-logo.png";
 import easeeLogo from "@/assets/easee-logo-dark.png";
 
 const PortfolioSection = () => {
