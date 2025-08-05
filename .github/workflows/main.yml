@@ -25,5 +25,6 @@ jobs:
           REMOTE_PORT: 22
           SOURCE: "dist/"
           TARGET: "/webroots/r473619/"
+          ARGS: "--delete --inplace --checksum"
           SCRIPT_AFTER: |
             cache-purge
