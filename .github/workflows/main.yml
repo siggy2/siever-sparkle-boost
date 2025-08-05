@@ -1,4 +1,4 @@
-name: SFTP Deploy to FastName
+name: Deploy via SFTP
 
 on:
   push:
@@ -9,22 +9,19 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Install and build
+      - name: Build site
         run: |
           npm ci
           npm run build
 
-      - name: List files for debug
-        run: ls -la ./dist
-
-      - name: Upload via SFTP
+      - name: Upload via SSH
         uses: easingthemes/ssh-deploy@main
         with:
-          ssh-server: ${{ secrets.SFTP_SERVER }}
-          ssh-username: ${{ secrets.SFTP_USERNAME }}
-          ssh-password: ${{ secrets.SFTP_PASSWORD }}
-          local-path: ./dist/
-          remote-path: ${{ secrets.SFTP_TARGET_PATH }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ssh.chowfiyk7.service.one
+          REMOTE_USER: chowfiyk7_w473616
+          REMOTE_PORT: 22
+          SOURCE: "dist/"
+          TARGET: "/public_html/"
