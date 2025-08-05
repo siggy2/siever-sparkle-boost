@@ -18,8 +18,8 @@ const Header = () => {
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </a>
-            <a href="#approach" className="text-muted-foreground hover:text-foreground transition-colors">
-              Our Approach
+            <a href="#founder" className="text-muted-foreground hover:text-foreground transition-colors">
+              Founder
             </a>
             <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
               Portfolio
