@@ -1,4 +1,4 @@
-name: Deploy via SFTP
+name: Deploy via SSH to FastName
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Upload via SSH
+      - name: Upload with SSH and purge cache
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -24,4 +24,6 @@ jobs:
           REMOTE_USER: chowfiyk7_w473616
           REMOTE_PORT: 22
           SOURCE: "dist/"
-          TARGET: "/public_html/"
+          TARGET: "/webroots/r473619/"
+          SCRIPT_AFTER: |
+            cache-purge
