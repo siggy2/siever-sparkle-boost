@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail, Globe } from "lucide-react";
+import sigvartHeadshot from "@/assets/sigvart-headshot.jpg";
 
 const FounderSection = () => {
   return (
@@ -76,14 +77,11 @@ const FounderSection = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <div className="aspect-[4/5] bg-gradient-hero rounded-3xl shadow-elegant overflow-hidden">
-                  <div className="w-full h-full bg-muted/20 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-3xl font-bold text-primary">SVE</span>
-                      </div>
-                      <p className="text-primary-foreground/80">Founder Photo</p>
-                    </div>
-                  </div>
+                  <img 
+                    src={sigvartHeadshot}
+                    alt="Sigvart Voss Eriksen - Founder & Managing Partner"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
                 <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
