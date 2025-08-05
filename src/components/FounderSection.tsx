@@ -21,7 +21,7 @@ const FounderSection = () => {
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold text-foreground mb-2">
-                      John Anderson
+                      Sigvart Voss Eriksen
                     </h3>
                     <p className="text-lg text-primary font-medium mb-4">
                       Founder & Managing Partner
@@ -30,31 +30,32 @@ const FounderSection = () => {
                   
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      With over 20 years of experience in venture capital and private equity, 
-                      John has been instrumental in identifying and scaling some of the most 
-                      successful technology companies in the Nordics.
+                      Sigvart brings extensive experience in leading digital transformations 
+                      and scaling technology companies across international markets. Most recently, 
+                      he served as Head of Telenor Nordics, driving growth and operational excellence.
                     </p>
                     <p>
-                      Prior to founding Siever, John was a Senior Partner at Nordic Capital, 
-                      where he led investments in over 50 companies, achieving an average 
-                      return of 3.2x across his portfolio.
+                      Prior to his regional leadership role, Sigvart was CEO of Tapad in the United States, 
+                      where he successfully scaled the cross-device marketing technology company. 
+                      He also led Omny, an industrial cybersecurity company owned by Aker and Telenor.
                     </p>
                     <p>
-                      John holds an MBA from INSEAD and a Master's in Engineering from 
-                      the Norwegian University of Science and Technology (NTNU).
+                      Throughout his career at Telenor, Sigvart has specialized in customer-facing 
+                      transformations and has a proven track record of identifying and nurturing 
+                      high-growth technology ventures.
                     </p>
                   </div>
                   
                   <div className="flex gap-4 mt-8">
                     <a 
-                      href="https://linkedin.com" 
+                      href="https://www.linkedin.com/in/sigvartv/" 
                       className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary/20 rounded-xl transition-colors duration-300 group"
                       aria-label="LinkedIn Profile"
                     >
                       <Linkedin className="w-5 h-5 text-primary" />
                     </a>
                     <a 
-                      href="mailto:john@siever.com" 
+                      href="mailto:sigvart@siever.com" 
                       className="flex items-center justify-center w-12 h-12 bg-primary/10 hover:bg-primary/20 rounded-xl transition-colors duration-300 group"
                       aria-label="Email"
                     >
@@ -78,7 +79,7 @@ const FounderSection = () => {
                   <div className="w-full h-full bg-muted/20 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-3xl font-bold text-primary">JA</span>
+                        <span className="text-3xl font-bold text-primary">SVE</span>
                       </div>
                       <p className="text-primary-foreground/80">Founder Photo</p>
                     </div>
